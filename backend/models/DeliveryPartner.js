@@ -18,4 +18,6 @@ const DeliveryPartnerSchema = new mongoose.Schema({
   },
 });
 
-module.exports = mongoose.model("DeliveryPartner", DeliveryPartnerSchema);
+const DeliveryPartner = mongoose.model("DeliveryPartner", DeliveryPartnerSchema);
+
+export default DeliveryPartner
