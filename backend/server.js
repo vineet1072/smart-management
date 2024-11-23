@@ -1,10 +1,10 @@
 import  express from "express"
 import  path from "path";
 import  dotenv from "dotenv";
-import  cors from ("cors");
+import  cors from "cors";
 import  bodyParser from "body-parser";
 import  connectDB from "./config/db";
-import  partnerRoutes from ("./routes/partnerRoutes");
+import  partnerRoutes from "./routes/partnerRoutes";
 
 dotenv.config();
 connectDB();
