@@ -1,4 +1,4 @@
-const DeliveryPartner = require("../models/DeliveryPartner");
+import DeliveryPartner from "../models/DeliveryPartner.js";
 
 // Fetch all partners
 const getAllPartners = async (req, res) => {
