@@ -1,4 +1,4 @@
-import Delivery from "../models/DeliveryPartner.js";
+import DeliveryPartner from "../models/DeliveryPartner.js";
 
 // Fetch all partners
 export const getAllPartners = async (req, res) => {
