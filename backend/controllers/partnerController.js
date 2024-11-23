@@ -1,7 +1,7 @@
 import Delivery from "../models/DeliveryPartner.js";
 
 // Fetch all partners
-const getAllPartners = async (req, res) => {
+export const getAllPartners = async (req, res) => {
   try {
     const partners = await DeliveryPartner.find();
     res.status(200).json(partners);
@@ -11,7 +11,7 @@ const getAllPartners = async (req, res) => {
 };
 
 // Add a new partner
-const addPartner = async (req, res) => {
+export const addPartner = async (req, res) => {
   try {
     const newPartner = new DeliveryPartner(req.body);
     await newPartner.save();
@@ -22,7 +22,7 @@ const addPartner = async (req, res) => {
 };
 
 // Update a partner
-const updatePartner = async (req, res) => {
+export const updatePartner = async (req, res) => {
   try {
     const updatedPartner = await DeliveryPartner.findByIdAndUpdate(
       req.params.id,
@@ -36,7 +36,7 @@ const updatePartner = async (req, res) => {
 };
 
 // Delete a partner
-const deletePartner = async (req, res) => {
+export const deletePartner = async (req, res) => {
   try {
     await DeliveryPartner.findByIdAndDelete(req.params.id);
     res.status(200).json({ message: "Partner deleted successfully" });
@@ -45,9 +45,4 @@ const deletePartner = async (req, res) => {
   }
 };
 
-module.exports = {
-  getAllPartners,
-  addPartner,
-  updatePartner,
-  deletePartner,
-};
+
