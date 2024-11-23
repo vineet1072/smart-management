@@ -4,7 +4,7 @@ import {
   addPartner,
   updatePartner,
   deletePartner,
-} from "../controllers/partnerController";
+} from "../controllers/partnerController.js";
 
 const router = express.Router();
 
