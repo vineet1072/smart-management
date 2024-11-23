@@ -13,4 +13,4 @@ router.post("/", addPartner);
 router.put("/:id", updatePartner);
 router.delete("/:id", deletePartner);
 
-module.exports = router;
+export default router;
