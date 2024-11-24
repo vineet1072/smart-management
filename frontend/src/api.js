@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_URL = "http://localhost:5000/api"; // Update with your backend URL
+const API_URL = "https://smart-management-1.onrender.com/api"; // Update with your backend URL
 
 // Fetch partners
 export const fetchPartners = async () => {
